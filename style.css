@@ -9,3 +9,5 @@ Template: brooklyn
 */
 
 @import url("../brooklyn/style.css");  
+
+copyright {   visibility: hidden;  }
