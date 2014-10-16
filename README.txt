@@ -1,1 +1,3 @@
 This is only an example child theme. We have added some of the available CSS files to it, which are handling most of the theme styles. Please read this article here to learn more about child theme: http://codex.wordpress.org/Child_Themes
+
+This is a change
