@@ -11,3 +11,5 @@ Template: brooklyn
 @import url("../brooklyn/style.css");  
 
 copyright {   visibility: hidden;  }
+
+.copyright { display: none !important; }
