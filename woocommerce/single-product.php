@@ -13,6 +13,12 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
 
+<div class="grid-container">		
+        	
+            <?php $grid = is_active_sidebar('blog-widget-area') ? 'grid-75 tablet-grid-75 mobile-grid-100' : 'grid-100 tablet-grid-100 mobile-grid-100'; ?>
+            
+            <div id="primary" class="grid-parent <?php echo $grid; ?>">
+                
 	<?php
 		/**
 		 * woocommerce_before_main_content hook
@@ -38,6 +44,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
+    </div>
 	<?php
 		/**
 		 * woocommerce_sidebar hook
@@ -46,5 +53,8 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
+	
+	</div>
 
 <?php get_footer( 'shop' ); ?>
+
