@@ -35,7 +35,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-    </div>
+    		
 	<?php
 		/**
 		 * woocommerce_sidebar hook
@@ -44,8 +44,8 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-	
-	</div>
+	    </div>
+</div>
 	
 
 <?php get_footer( 'shop' ); ?>
