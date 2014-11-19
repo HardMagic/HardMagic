@@ -11,8 +11,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
+?>
 
 <div id="woopage" style="background: #0A0000" width="100%"> 
+<?php
 
 wc_print_notices();
 
