@@ -13,12 +13,21 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
 
-<div id="woopage" style="background: #0A0000" class="grid-container">		
+<div class="grid-container">		
         	
             <?php $grid = is_active_sidebar('blog-widget-area') ? 'grid-75 tablet-grid-75 mobile-grid-100' : 'grid-100 tablet-grid-100 mobile-grid-100'; ?>
             
             <div id="primary" class="grid-parent <?php echo $grid; ?>">
                 
+	<?php
+		/**
+		 * woocommerce_before_main_content hook
+		 *
+		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+		 * @hooked woocommerce_breadcrumb - 20
+		 */
+		do_action( 'woocommerce_before_main_content' );
+	?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
@@ -35,7 +44,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-    		
+    </div>
 	<?php
 		/**
 		 * woocommerce_sidebar hook
@@ -44,8 +53,8 @@ get_header( 'shop' ); ?>
 		 */
 		do_action( 'woocommerce_sidebar' );
 	?>
-	    </div>
-</div>
 	
+	</div>
 
 <?php get_footer( 'shop' ); ?>
+
