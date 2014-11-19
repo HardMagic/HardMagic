@@ -13,6 +13,8 @@ if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
 
+<div style="background: #0A0000" width="100%">
+
 <div id="woopage" style="background: #0A0000" class="grid-container">		
         	
             <?php $grid = is_active_sidebar('blog-widget-area') ? 'grid-75 tablet-grid-75 mobile-grid-100' : 'grid-100 tablet-grid-100 mobile-grid-100'; ?>
@@ -45,6 +47,7 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_sidebar' );
 	?>
 	
+	</div>
 	</div>
 
 <?php get_footer( 'shop' ); ?>
