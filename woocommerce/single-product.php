@@ -19,15 +19,6 @@ get_header( 'shop' ); ?>
             
             <div id="primary" class="grid-parent <?php echo $grid; ?>">
                 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
