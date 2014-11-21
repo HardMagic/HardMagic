@@ -13,7 +13,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<div id="woopage" style="background: #0A0000" width="100%"> 
 <?php
 
 wc_print_notices();
@@ -62,5 +61,3 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', WC()->cart->g
 </form>
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
-
-</div>
