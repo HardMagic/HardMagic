@@ -12,6 +12,7 @@ show_admin_bar(false);
 
 @ini_set( 'max_execution_time', '300' );
 
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
 // add a favicon to your site
 function blog_favicon() {
