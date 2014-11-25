@@ -14,8 +14,7 @@ copyright {   visibility: hidden;  }
 
 .copyright { display: none !important; }
 
-
-.section-title:after {
+.light .pt-style-2 .page-title:after, .light .pt-style-2 .parallax-title:after, .light .pt-style-2 .section-title:after {
 content: "";
 display: block;
 background-color: #70020B;
