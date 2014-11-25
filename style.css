@@ -14,3 +14,12 @@ copyright {   visibility: hidden;  }
 
 .copyright { display: none !important; }
 
+
+.section-title:after {
+content: "";
+display: block;
+background-color: #70020B;
+width: 180px;
+height: 1px;
+margin: 15px auto 0;
+}
